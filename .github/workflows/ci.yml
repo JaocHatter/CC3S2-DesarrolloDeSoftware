@@ -3,30 +3,42 @@ name: CI/CD Pipeline
 on:
     push:
         branches:
-            -main
+            - main
     pull_request:
         branches:
-            -main
+            - main
+
 jobs:
     build:
         runs-on: ubuntu-latest
+
         steps:
             - name: Checkout Code # Clonación del repositorio
-              uses: actions/checkout@v2s
+              uses: actions/checkout@v2
+
             - name: Set up node js
               uses: actions/setup-node@v2
               with:
                 node-version: "14"
+
             - name: Install dependencies
               run: npm install
               working-directory: "Actividad2/devops-practice-2"
+
             - name: Running test
               run: npm test
+              working-directory: "Actividad2/devops-practice-2"
+
             - name: Run security script
               run: npm audit
+              working-directory: "Actividad2/devops-practice-2"
+
             # Ejecutar Docker Compose
             - name: Build and run docker compose
               run: docker compose up --build -d
-           # Para ejecucion de Docker Compose
+              working-directory: "Actividad2/devops-practice-2"
+
+            # Para ejecucion de Docker Compose
             - name: Stop and clean Docker Compose
               run: docker compose down
+              working-directory: "Actividad2/devops-practice-2"
