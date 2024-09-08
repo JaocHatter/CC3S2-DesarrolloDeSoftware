@@ -5,7 +5,7 @@ describe('GET /', () => {
     let server;
 
     beforeAll(() => {
-        server = app.listen(0); // Usar 0 permite al sistema asignar un puerto libre
+        server = app.listen(3001); // Usar 0 permite al sistema asignar un puerto libre
     });
 
     afterAll(() => {
