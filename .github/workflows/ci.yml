@@ -32,7 +32,9 @@ jobs:
             - name: Run security script
               run: npm audit
               working-directory: "Actividad2/devops-practice-2"
-
+            - name: Fix vulnerabilities
+              run: npm audit fix
+              working-directory: "Actividad2/devops-practice-2"
             # Ejecutar Docker Compose
             - name: Build and run docker compose
               run: docker compose up --build -d
