@@ -22,7 +22,7 @@ Se encontró algunos errores en el código que no permitian que el comando "beha
 3. Lógica de Belly.py
 En el código "belly_steps.py" se declara a belly como una variable global, lo que hacia según la lógica "Belly.py" cada actualizacion de la cantidad de pepinos como de tiempo se actualizara.<br>
 ![alt text](images/img3.png)
-
+---
 ## Nuevos casos:
 ### Feature: Característica del Estómago Extendida
 
@@ -40,11 +40,12 @@ La solución fue modificar el patrón.<br>
 
 ### Feature: Validación de cantidades no válidas
 Manejar casos en los que se ingresen cantidades no válidas de pepinos (muy altas o negativas).<br>
-![alt text](images/img8.png)
+![alt text](images/img8.png)<br>
+
 La solución fue refactorizar la clase "Belly", en la función comer para ser más específicos, añadiendo "Assertion Flags".<br>
-![alt text](images/img9.png)
+![alt text](images/img9.png)<br>
 Resultados:
-![alt text](images/img10.png)
+![alt text](images/img10.png)<br>
 
 ### Feature: Manejo de diferentes lenguajes
 Añadir soporte para diferentes idiomas, como inglés.<br>
