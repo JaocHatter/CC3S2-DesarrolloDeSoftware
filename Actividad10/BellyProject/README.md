@@ -27,23 +27,23 @@ En el código "belly_steps.py" se declara a belly como una variable global, lo q
 ### Feature: Característica del Estómago Extendida
 
 Se añadieron los siguientes escenarios.<br>
-![alt text](images/img4.png)
+![alt text](images/img4.png)<br>
 
 La solución fue añadir el siguiente patrón para la función con etiqueta "Give", extender el diccionario de números con nuevos casos y preever nuevos errores de conversión de string a tipo **int**.<br>
 ![alt text](images/img5.png)
 
 ### Feature: Descripciones de tiempo complejas
 Ampliar la lógica para manejar descripciones de tiempo complejas.<br>
-![alt text](images/img6.png)
+![alt text](images/img6.png)<br>
 La solución fue modificar el patrón.<br>
-![alt text](images/img7.png)
+![alt text](images/img7.png)<br>
 
 ### Feature: Validación de cantidades no válidas
 Manejar casos en los que se ingresen cantidades no válidas de pepinos (muy altas o negativas).<br>
 ![alt text](images/img8.png)<br>
 
 La solución fue refactorizar la clase "Belly", en la función comer para ser más específicos, añadiendo "Assertion Flags".<br>
-![alt text](images/img9.png)<br>
+![alt text](images/img9.png) <br>
 Resultados:
 ![alt text](images/img10.png)<br>
 
