@@ -12,45 +12,45 @@ estómago gruñe.
 
 ### Estas fueron las correciones para que el programa ejecute todos los test correctamente:
 1. Traducción del castellano al inglés:
-Existen algunas palabras claves que deben estar en Castellano
+Existen algunas palabras claves que deben estar en Castellano<br>
 ![alt text](images/img1.png)
 
 2. Detalles en la lógica:
-Se encontró algunos errores en el código que no permitian que el comando "behave" las analizara correctamente. 
+Se encontró algunos errores en el código que no permitian que el comando "behave" las analizara correctamente.<br>
 ![alt text](images/img2.png)
 
 3. Lógica de Belly.py
-En el código "belly_steps.py" se declara a belly como una variable global, lo que hacia según la lógica "Belly.py" cada actualizacion de la cantidad de pepinos como de tiempo se actualizara.
+En el código "belly_steps.py" se declara a belly como una variable global, lo que hacia según la lógica "Belly.py" cada actualizacion de la cantidad de pepinos como de tiempo se actualizara.<br>
 ![alt text](images/img3.png)
 
 ## Nuevos casos:
 ### Feature: Característica del Estómago Extendida
 
-Se añadieron los siguientes escenarios
+Se añadieron los siguientes escenarios.<br>
 ![alt text](images/img4.png)
 
-La solución fue añadir el siguiente patrón para la función con etiqueta "Give", extender el diccionario de números con nuevos casos y preever nuevos errores de conversión de string a tipo **int**.
+La solución fue añadir el siguiente patrón para la función con etiqueta "Give", extender el diccionario de números con nuevos casos y preever nuevos errores de conversión de string a tipo **int**.<br>
 ![alt text](images/img5.png)
 
 ### Feature: Descripciones de tiempo complejas
-Ampliar la lógica para manejar descripciones de tiempo complejas.
+Ampliar la lógica para manejar descripciones de tiempo complejas.<br>
 ![alt text](images/img6.png)
-La solución fue modificar el patrón
+La solución fue modificar el patrón.<br>
 ![alt text](images/img7.png)
 
 ### Feature: Validación de cantidades no válidas
-Manejar casos en los que se ingresen cantidades no válidas de pepinos (muy altas o negativas).
+Manejar casos en los que se ingresen cantidades no válidas de pepinos (muy altas o negativas).<br>
 ![alt text](images/img8.png)
-La solución fue refactorizar la clase "Belly", en la función comer para ser más específicos, añadiendo "Assertion Flags"
+La solución fue refactorizar la clase "Belly", en la función comer para ser más específicos, añadiendo "Assertion Flags".<br>
 ![alt text](images/img9.png)
 Resultados:
 ![alt text](images/img10.png)
 
 ### Feature: Manejo de diferentes lenguajes
-Añadir soporte para diferentes idiomas, como inglés.
+Añadir soporte para diferentes idiomas, como inglés.<br>
 ![alt text](images/img11.png)
-Para esto será util añadir un diccionario de números en inglés y modificar los grupos para que estas tengan alternativas.
+Para esto será util añadir un diccionario de números en inglés y modificar los grupos para que estas tengan alternativas.<br>
 ![alt text](images/img12.png)
-Resultados:
+Resultados:<br>
 ![alt text](images/img13.png)                
 
