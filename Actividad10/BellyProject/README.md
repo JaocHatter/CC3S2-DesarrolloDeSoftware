@@ -49,9 +49,9 @@ Resultados:
 
 ### Feature: Manejo de diferentes lenguajes
 Añadir soporte para diferentes idiomas, como inglés.<br>
-![alt text](images/img11.png)
+![alt text](images/img11.png)<br>
 Para esto será util añadir un diccionario de números en inglés y modificar los grupos para que estas tengan alternativas.<br>
-![alt text](images/img12.png)
+![alt text](images/img12.png)<br>
 Resultados:<br>
 ![alt text](images/img13.png)                
 
